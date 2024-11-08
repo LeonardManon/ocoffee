@@ -1,0 +1,23 @@
+{
+  "name": "s09-ocoffee-leonardmanon",
+  "version": "1.0.0",
+  "description": "## projet O'coffee",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon start.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "nodemon": "^3.1.2",
+    "pg": "^8.11.5"
+  }
+}

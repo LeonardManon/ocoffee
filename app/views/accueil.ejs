@@ -1,0 +1,27 @@
+<%- include('partials/header') %>
+<main>
+    <section class="presentation">
+        <div class=" info" >
+        <h2> Ambiance de la boutique </h2>
+        <p> Bienvenue dans notre boutique, où règne une ambiance chaleureuse et accueillante qui éveille tous vos sens. Dès que vous franchissez la porte, vous êtes enveloppé d'une douce symphonie d'arômes envoûtants de café fraîchement moulu. </p>
+        <a href="/catalog">Découvrir </a>
+    </div>
+        <img class="picture-home" src="/integration/images/about.jpg" alt="différentes tasses de cafés"  height="50rem" width="50rem" />
+    </section>
+    <section class="new">
+            <h2 class="new-title">Nouveautés</h2>
+        <section class ="home-article">
+            <% accueil.forEach((product_coffee, index) => { %>
+                <% if(index < 3){ %>
+                <article class="novelty-product">
+                    <h3 class="product-title"><%= product_coffee.name %></h3>
+                    <img class="product-img-home" src="/integration/images/coffees/<%=product_coffee.reference%>.png" alt="photo-reference">
+                    <p> <%= product_coffee.description %></p>
+                    <a href="/produit/<%= product_coffee.id %>">Découvrir </a>
+                </article>
+                <% } %>   
+            <% }) %>
+         </section>
+        </section>
+    </main>
+<%- include('partials/footer') %>

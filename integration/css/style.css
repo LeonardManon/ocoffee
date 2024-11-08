@@ -1,0 +1,315 @@
+body {
+  margin: 0%;
+  background: #FEFAF4;
+  color: #4e342e;
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  padding: 0%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-around;
+  background-color: #F9F0E7;
+  width: 100%;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  color: #4e342e;
+}
+
+.nav {
+  align-content: space-around;
+}
+
+.nav-link {
+  margin: 1rem;
+  color: #fefaf4;
+  padding: 0.2rem;
+}
+
+.menu-burger{
+  display:none;
+}
+/* MAIN ACCUEIL */
+
+.presentation {
+  align-items: center;
+  display: flex;
+  margin: 6rem;
+}
+
+.info {
+  margin: 3rem;
+  text-align: justify;
+}
+
+a {
+  background-color: #83503c;
+  border-color: #83503c;
+  color:#fefaf4;
+  border-radius: 10px 100px / 120px;
+  padding: 0.2rem;
+}
+
+.picture-home {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  border-radius: 10%;
+}
+
+.article-home{
+  grid-template-columns: 20rem 20rem 20rem;
+  margin: 2rem;
+  display: grid;
+  justify-content: space-around;
+}
+
+.product-img-home{
+  height: 10rem;
+  width: 10rem;
+  border-radius: 10%;
+}
+
+.novelty-product{
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+  border: #83503c solid;
+  border-radius: 10%;
+  padding: 1rem ;
+}
+
+/* MAIN CATALOGUE */
+
+.catalog {
+  background: url(../images/coffees/753915650.png) no-repeat 50%;
+  background-size: cover;
+  height: 20rem;
+  margin: 5rem;
+  color: #ffffff;
+  border-radius: 10%;
+}
+
+h1 {
+  margin-left: inherit;
+  line-height: 16rem;
+  white-space: nowrap;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.link-see {
+  background-color: #FAEBD7;
+  border-color: #4e342e;
+  color: #4e342e;
+  border-radius: 10px 100px / 120px;
+  margin-left: 4rem;
+}
+
+.new-product-catalog {
+  display: inline-grid;
+  grid-template-columns: 20rem 20rem 20rem;
+  margin: 2.5% 15% 10% 15%;}
+
+.new-catalog {
+  margin-top: 5rem;
+  display: grid;
+}
+
+.img-catalog{
+  height: 10rem;
+  width: 10rem;
+  align-items: center;
+  display: grid;
+  border-radius: 10%;
+  margin: 2rem;
+}
+
+.home-article {
+  justify-content: center;
+  display: flex;
+  margin: 2rem;
+}
+
+.block-article-catalog {
+  justify-content: center;
+  display: flex;
+  margin: 2rem;
+}
+
+.product-catalog{
+  margin: 2rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: #83503c solid;
+  border-radius: 10%;
+  padding: 1rem;
+}
+
+
+/*MAIN PRODUIT */
+
+.block-product {
+  margin: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.illustration{
+  display: flex;
+  justify-content: center;
+
+}
+.product-img{
+  height: 15rem;
+  margin-top:5rem;
+  border-radius: 10%;
+}
+
+.product-footer {
+  margin-top: 2rem;
+  
+}
+.product {
+  text-align: center;
+  text-align: center;
+  border:  #83503c solid;
+  border-radius: 10%;
+  padding: 4rem;
+}
+
+
+/* MAIN ACCUEIL ET CATALOGUE */
+.new {
+  margin-top: 5rem;
+}
+
+.new-title {
+  text-align: center;
+  background-color: #faebd7;
+}
+
+.new-product {
+  margin: 2rem;
+  border: solid 0.1rem beige;
+  text-align: justify;
+}
+
+/* MAIN 404*/
+.error {
+  align-items: center;
+  display: flex;
+  margin: 6rem;
+}
+
+.error-footer {
+  margin: 2rem;
+  border: solid 0.1rem beige;
+}
+
+/* MAIN INFORMATIONS */
+
+.information {
+  text-align: justify;
+  margin: 2rem;
+}
+
+/* FOOTER */
+
+.footer {
+  text-align: center;
+  margin-top: 5rem;
+  background-color: #F9F0E7;
+}
+
+
+/* RESPONSIVE */
+@media screen and (max-width: 390px) { 
+/* HEADER */
+.header{
+ flex-direction: column;
+}
+.nav-link-responsive {
+  display: block;
+  text-align: right;
+
+}
+.menu-burger{
+  display: block;
+  position: absolute;
+  top: 1.5rem;
+  right: 1.2rem;
+}
+
+.nav-link{
+  display: none;
+}
+
+/* ACCUEIL */
+.article-home{
+  grid-template-columns: 20rem;
+}
+
+.presentation {
+  display: flex;
+  margin: 2rem;
+  flex-direction: column;
+}
+
+.picture-home {
+  width: 60%;
+  height: 30%;
+  border-radius: 10%;
+}
+
+/* CATALOGUE*/
+
+.new-product-catalog {
+  display: inline-grid;
+  grid-template-columns: 15rem;
+  margin: 3rem 3rem 3rem 3rem;
+}
+.catalog {
+  width: 16rem;
+}
+
+h1 {
+  font-size: 1rem;
+  margin-left: auto;
+}
+
+.filtre {
+  font-size: 10px;
+}
+
+/* PRODUIT */
+.product-img-top {
+  height: 10rem;
+  margin-top: 5rem;
+}
+
+}

@@ -1,0 +1,25 @@
+<%- include('partials/header') %>
+<main>
+    <section class="illustration">
+        <img class="product-img" src="/integration/images/coffees/<%=produit.reference%>.png" alt="photo-reference">
+    </section>
+        <section class = bloc-product>
+            <article class="product">
+                <header class="product-header">
+                    <h1 class="product-title"> <%=produit.name%> </h3>
+                </header>
+                <section class="product-content">
+                    <p><%=produit.description%></p>
+                    <p>Référence : <%=produit.reference%></p>
+                    <p> Origine : <%=produit.origin%></p>
+                    <p>Prix au kilo :<%=produit.price_per_kilo%> € </p>
+                    <p>Caractéristique principale :<%=produit.main_feature%></p>
+                    <p>Disponible <%=produit.available%></p>
+                </section>
+                <footer class="product-footer">
+                    <a href="/catalogue">Catalogue </a>
+                </footer>
+            </article>
+        </section>
+</main>
+<%- include('partials/footer') %>
