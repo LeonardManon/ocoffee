@@ -11,5 +11,5 @@ Dans un premier temps il s’agit donc d’un catalogue à des fins informatives
 
 Les questions d’accessibilité et d’écologie étant au centre de la démarche de l’entreprise, nous souhaitons que le site web soit conçu et réalisé en respectant les meilleures pratiques dans ces domaines.
 
-Cible
+# Cible
 La cible principale du site est la clientèle présente sur la ville de Hauts-de-Cloques et alentours.
